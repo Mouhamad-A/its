@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     padding: 0;
@@ -8,7 +9,7 @@
 .header{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     border: 1px solid rgb(0,0,0,0.1);
     height: 80px;
 }
@@ -18,7 +19,7 @@
 
 }
 .header__nav-logo{
-    padding: 0px;
+    padding: 40px;
 }
 
 
@@ -26,23 +27,158 @@
 .button-header{
     width: 100%;
     height:150px;
-
     display: flex;
     align-items: center;
     justify-content: end;
-    gap: 20px;
+    gap: 25px;
 
-   
-   
+}
+
+.button{
+padding: 10px 40px;
+border-radius: 30px;
+border: none;
+border: 3px solid #2F8DCD;
+background-color: #2F8DCD;
+color: white;
+transition: all 1s;
+cursor: pointer;
+font-family: "Poppins",sans-serif;
+font-size: 15px;
+}
+
+.button:hover{
+    background-color: white;
+    color: #2F8DCD;
+}
+
+.main-cloud{
+    width: 100%;
+    height: 580px;
+    object-fit: cover;
+    z-index: -1;
+    position: relative;
 
 }
 
 
+.main__container{
+    width: 100%;
+    position: relative;
+}
 
 
 
+.img-text{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 90px;
+    left: 1000px;
+    font-family: "Poppins",sans-serif;
+    
+    }
+    
+    .title-p{
+        position: relative;
+        bottom: 90px;
+        right: 120px;
+        font-size: 56px;
+        font-weight: 600;
+}
+
+.description-p{
+    position: relative;
+    right: 130px;
+    bottom: 60px;
+    font-size: 20px;
+}
+
+.button-know-more{
+position: relative;
+right: 130px;
+padding: 10px 40px;
+border-radius: 30px;
+border: none;
+border: 3px solid #2F8DCD;
+background-color: #2F8DCD;
+color: white;
+transition: all 1s;
+cursor: pointer;
+font-family: "Poppins",sans-serif;
+font-size: 15px;
+
+}
+
+.button-know-more:hover{
+    background-color: transparent;
+    color: #2F8DCD;
+}
 
 
+.title-description{
+    text-align: center;
+    margin-top: 50px;
+    font-size:46px ;
+    font-family: "Montserrat",sans-serif;
+    color: #2F8DCD;
+    font-weight: 600;
+   
+}
+.description{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+   
+}
+
+.background{
+    background-color: rgb(128, 128, 128,0.1);
+}
+.p-description{
+    
+    width: 400px;
+    font-family:"Montserrat",sans-serif;
+    font-size: 20px;
+
+}
+video{
+    border: 1px solid rgb(0,0,0,0.1);
+    border-radius: 20px;
+    width: 550px;
+    height: auto;
+}
+
+.slogan{
+    margin-top: 50px;
+    font-family:"Montserrat",sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.service{
+    width: 100%;
+    height: 500px;
+    display:flex;
+    
+}
+.activité{
+    width: 100%;
+    height:auto;
+   
+    display: flex;
+
+}
+.icon-service{
+    width: 60px;
+    height: auto;
+    object-fit: cover;
+}
+
+.title-service{
+    text-align: center;
+}
 
 
 
@@ -103,6 +239,7 @@ ul li ul.menu-déroulant {
     position: absolute;
     z-index: 999;
     display: none;
+    background-color: white;
 }
 
 
